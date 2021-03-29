@@ -6,6 +6,6 @@ addEventListener('fetch', (event) => {
     headers: Object.fromEntries(event.request.headers.entries())
   }, null, 2), {
     headers: { "content-type": "application/json; charset=UTF-8" },
-  })
+  }))
 })
   
