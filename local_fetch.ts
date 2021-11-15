@@ -1,6 +1,11 @@
 console.log("cwd: ", Deno.cwd());
 console.log("import.meta.main: ", import.meta.main);
 try {
+  console.log(await Deno.readFile("/src/local_fetch.ts"))
+} catch (e) {
+  console.log("readFile error: ", e)
+}
+try {
   console.log(await Deno.readTextFile("/src/local_fetch.ts"))
 } catch (e) {
   console.log("readTextFile error: ", e)
