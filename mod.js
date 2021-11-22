@@ -12,6 +12,7 @@ pre {
     background-color: lightgrey;
     border-radius: 0.5em;
     box-shadow: inset black 0 0 11px -6px;
+    padding: 0.5em;
 }
 </style>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
