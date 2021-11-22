@@ -1,6 +1,13 @@
 import { serve } from "https://deno.land/std@0.115.1/http/server.ts";
 
-serve((request) => new Response(Deno.inspect(request)));
+serve((request) => new Response(`
+import.meta.url: ${import.meta.url}
+Deno.cwd(): ${Deno.cwd()}
+DENO_REGION: ${Deno.env.get("DENO_REGION")}
+DENO_DEPLOYMENT_ID: ${Deno.env.get("DENO_DEPLOYMENT_ID")}
+Request:
+${Deno.inspect(request)}
+`));
 /*
 addEventListener('fetch', (event) => {
   event.respondWith(new Response(JSON.stringify({
