@@ -14,6 +14,9 @@ pre {
     box-shadow: inset black 0 0 11px -6px;
 }
 </style>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 <body>
 <h3>import.meta.url:</h3><pre>"${import.meta.url}"</pre>
