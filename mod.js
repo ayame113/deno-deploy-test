@@ -25,9 +25,8 @@ pre {
 <h3>Deno.env.get("DENO_REGION"):</h3><pre>"${Deno.env.get("DENO_REGION")}"</pre>
 <h3>Deno.env.get("DENO_DEPLOYMENT_ID"):</h3><pre>"${Deno.env.get("DENO_DEPLOYMENT_ID")}"</pre>
 <h3>Request:</h3><pre>${Deno.inspect(request)}</pre>
-<h3>window:</h3><pre>${Deno.inspect(window)}</pre>
-<h3>Deno:</h3><pre>${Deno.inspect(Deno)}</pre>
-<h3>Deno.core:</h3><pre>${Deno.inspect(Deno.core)}</pre>
+<h3>globalThis:</h3><pre>${Deno.inspect(globalThis)}</pre>
+<h3>globalThis.Deno:</h3><pre>${Deno.inspect(globalThis.Deno)}</pre>
 </body>
 </html>
 `, {headers: {"Content-Type": "text/html; charset=utf-8"}}));
