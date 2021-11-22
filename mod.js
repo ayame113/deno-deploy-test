@@ -15,4 +15,4 @@ serve((request) => new Response(`
 <h3>Deno.core:</h3><pre>${Deno.inspect(Deno.core)}</pre>
 </body>
 </html>
-`));
+`, headers: {"Content-Type": "text/html; charset=utf-8"}));
