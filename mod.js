@@ -5,4 +5,6 @@ Deno.cwd(): "${Deno.cwd()}"
 Deno.env.get("DENO_REGION"): "${Deno.env.get("DENO_REGION")}"
 Deno.env.get("DENO_DEPLOYMENT_ID"): "${Deno.env.get("DENO_DEPLOYMENT_ID")}"
 Request: ${Deno.inspect(request)}
+window: ${Deno.inspect(window)}
+Deno: ${Deno.inspect(Deno)}
 `));
