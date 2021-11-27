@@ -27,6 +27,7 @@ pre {
 <h3>Request:</h3><pre>${Deno.inspect(request)}</pre>
 <h3>globalThis:</h3><pre>${Deno.inspect(globalThis)}</pre>
 <h3>globalThis.Deno:</h3><pre>${Deno.inspect(globalThis.Deno)}</pre>
+<a href="https://github.com/ayame113/deno-deploy-test" style="text-align: center;">github repo</a>
 </body>
 </html>
 `, {headers: {"Content-Type": "text/html; charset=utf-8"}}));
