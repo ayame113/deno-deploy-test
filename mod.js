@@ -21,9 +21,9 @@ pre {
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 <body>
-<h3>import.meta.url:</h3><pre>"${import.meta.url}"</pre>
-<h3>Deno.cwd():</h3><pre>"${Deno.cwd()}"</pre>
-<h3>Deno.env.toObject():</h3><pre>"${Deno.inspect(Deno.env.toObject())}"</pre>
+<h3>import.meta.url:</h3><pre>${Deno.inspect(import.meta.url)}</pre>
+<h3>Deno.cwd():</h3><pre>${Deno.inspect(Deno.cwd())}</pre>
+<h3>Deno.env.toObject():</h3><pre>${Deno.inspect(Deno.env.toObject())}</pre>
 <h3>Request:</h3><pre>${Deno.inspect(request)}</pre>
 <h3>globalThis:</h3><pre>${Deno.inspect(globalThis)}</pre>
 <h3>globalThis.Deno:</h3><pre>${Deno.inspect(globalThis.Deno)}</pre>
