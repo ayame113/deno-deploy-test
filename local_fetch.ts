@@ -1,7 +1,6 @@
 console.log("cwd: ", Deno.cwd());
 console.log("import.meta.url: ", import.meta.url);
 
-
 try {
   console.log(await Deno.readFile("/src/local_fetch.ts"))
 } catch (e) {
