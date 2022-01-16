@@ -6,7 +6,7 @@ serve((request) => new Response(`
 <head>
 <style>
 body {
-    background-color: bisque;
+    background-color: lightyellow;
 }
 pre {
     background-color: lightgrey;
