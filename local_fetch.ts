@@ -29,14 +29,13 @@ if (res.body) {
 // const jsonContent = await res.json();
 // const formContent = await res.formData();
 // const blobContent = await res.blob();
-
-// ディレクトリの中身を取得
-for await (const dirEntry of Deno.readDir(new URL("./", import.meta.url))) {
-  console.log(dirEntry);
-}
-
 const fileHandler = await Deno.open(new URL("./tmp.ts", import.meta.url));
 fileHandler.close();
+
+// ディレクトリの中身を取得
+for await (const dirEntry of Deno.readDir(new URL("../", import.meta.url))) {
+  console.log(dirEntry);
+}
 
 // ファイル情報を取得
 const stat = await Deno.stat(new URL("./tmp.ts", import.meta.url));
